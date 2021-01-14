@@ -1,0 +1,13 @@
+---
+# vars file for ipam-create-dns-net-host
+domain: campuswest.local
+dcomment: local DNS zone
+state: present
+networktocreate: 192.168.200.0/24
+netcomment: this is my second IPv4 network
+host: hotfudge
+
+nios_provider:
+        host: 192.0.0.2 # replace this with IP of the Infoblox server
+        username: admin
+        password: ansible
